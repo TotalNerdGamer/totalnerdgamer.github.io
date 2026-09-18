@@ -1,0 +1,47 @@
+:root {
+    --primary-bg-color:white;
+    --primary-topbar-color: blue;
+    --primary-text-color: black;
+    --sec-topbar-color: black;
+}
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --primary-bg-color: black;
+    --primary-text-color: white;
+    --primary-topbar-color: red;
+    --sec-topbar-color: #333333;
+  }
+}
+body {
+    background-color: var(--primary-bg-color);
+}
+h1, p, h2, h3, h4, h5, h6 {
+    color: var(--primary-text-color);
+}
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: var(--sec-topbar-color);
+  display: flex;
+}
+
+ul.nav li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul.nav li.active a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.nav li.active {
+  background-color: var(--primary-topbar-color);
+}
+ul.nav li:hover {
+  padding: 10px 0px;
+}
