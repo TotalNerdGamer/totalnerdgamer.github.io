@@ -14,9 +14,12 @@
 }
 body {
     background-color: var(--primary-bg-color);
+    transition: background-color 2s;
 }
 h1, p, h2, h3, h4, h5, h6 {
     color: var(--primary-text-color);
+    display: absolute;
+    transition: color 2s;
 }
 ul.nav {
   list-style-type: none;
@@ -24,6 +27,7 @@ ul.nav {
   padding: 0;
   background-color: var(--sec-topbar-color);
   display: flex;
+  transition: background-color 2s;
 }
 
 ul.nav li a {
@@ -38,10 +42,16 @@ ul.nav li.active a {
   padding: 14px 16px;
   text-decoration: none;
 }
-
+ul.nav li:hover a {
+  font-weight: bold;
+}
+ul.nav li {
+  transition: padding 1s;
+}
 ul.nav li.active {
   background-color: var(--primary-topbar-color);
+  transition: background-color 2s, padding 1s;
 }
-ul.nav li:hover {
+ul.nav:hover li {
   padding: 10px 0px;
 }
