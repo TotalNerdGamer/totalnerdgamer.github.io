@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Hunt</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="funweb.js"></script>
+    </head>
+    <body>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li class="active"><a href="hunt.html">Hunt</a></li>
+        </ul>
+        <h1>The Hunt!</h1>
+        <p>This site has plenty of hidden pages and links. Some lead to things on this site, some don't. It's like the <a class="hiddenlink" href="https://deltarune.com/sweepstakes" target="_blank_" onclick="hidlink('spamton')">Spamton Sweepstakes</a>, but not as creepy or lore-heavy. Can you find them all?</p>
+        <ul id="huntlist">
+            <p>You don't have any found sites recorded yet! Keep searching! The list will refresh every 30 seconds.</p>
+        </ul>
+        <script>
+            genhuntlist();
+            let gen = setInterval(genhuntlist, 30000);
+        </script>
+    </body>
+</html>
