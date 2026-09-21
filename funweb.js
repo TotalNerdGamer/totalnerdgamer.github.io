@@ -1,3 +1,15 @@
+/*Hey! Are you trying to cheat at the Hunt?
+Just kidding! Feel free to look through this. 
+It doesn't tell you the location of most of the links anyway.
+Why does that matter?
+Well, as you'll see below, the logic for updating the visited list is tied to the links and not the pages!
+Why?
+Because it seemed like it would be easier at the time.
+And because now I can't link it to the pages without removing the $pamton $weep$take$ from the hunt.
+If you really want to cheat on the Hunt, you can just look in the html files or use your console to modify your localStorage.
+But if you just want some hints, feel free to check the list of hidden link names.
+
+*/
 function fotr() {
     const facts = [
         "This page supports both light and dark mode! I think it looks better dark.",
@@ -22,7 +34,8 @@ function hidlink(name) {
         }
     } else {
         localStorage.vishid = JSON.stringify([name]);
-        alert("Congrats! You found your first hidden link! The link will be visible(on the page where you found it) from now on. Go to the \"Hunt\" page to see links you've found.");
+        let text = ("Congrats! You found your first hidden link! The link will be visible(on the page where you found it) from now on. Go to the \"Hunt\" page to see links you've found.");
+        const alerttimer = setTimeout(alert,0,text);
     }
 }
 
