@@ -25,7 +25,7 @@ function fotr() {
 }
 
 function hidlink(name) {
-    const allhid = ["spamton","archie"];
+    const allhid = ["spamton","archie","frost"];
     if (localStorage.vishid) {
         const vislist = JSON.parse(localStorage.vishid);
         if (!vislist.includes(name)) {
@@ -44,6 +44,7 @@ function genhuntlist() {
     const conv = {
         "spamton": "<li><p>Deltarune's <a href='https://deltarune.com/sweepstakes' target='_blank_'>Spamton Sweepstakes</a>.</p></li>",
         "archie": "<li><p>The page discussing the development of <a href='archie.html'>my indie game \"Archie: Of Mice and Men.\"</a></p></li>",
+        "frost": "<li><p><a href=\"https://www.poetryfoundation.org/poems/43816/to-a-mouse-56d222ab36e33\" target=\"_blank_\">Robert Frost's poem \"To a Mouse.\"</a> I'll admit I have a hard time understanding it(it is EXTREMELY Scottish) but as far as I can tell it's pretty good.<p></li>",
     }
     if (localStorage.vishid) {
         const vislist = JSON.parse(localStorage.vishid);

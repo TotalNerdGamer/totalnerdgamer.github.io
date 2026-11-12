@@ -16,7 +16,7 @@ body {
     background-color: var(--primary-bg-color);
     transition: background-color 2s;
 }
-h1, p, h2, h3, h4, h5, h6 {
+h1, p, h2, h3, h4, h5, h6, footer{
     color: var(--primary-text-color);
     display: absolute;
     transition: color 2s;
