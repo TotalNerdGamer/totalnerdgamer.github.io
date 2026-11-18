@@ -3,6 +3,7 @@
     --primary-topbar-color: blue;
     --primary-text-color: black;
     --sec-topbar-color: black;
+    --sel-topbar-color: grey;
 }
 @media screen and (prefers-color-scheme: dark) {
   :root {
@@ -10,6 +11,7 @@
     --primary-text-color: white;
     --primary-topbar-color: red;
     --sec-topbar-color: #333333;
+    --sel-topbar-color: grey;
   }
 }
 body {
@@ -19,7 +21,7 @@ body {
 h1, p, h2, h3, h4, h5, h6, footer{
     color: var(--primary-text-color);
     display: absolute;
-    transition: color 2s;
+    transition: color 2s; 
 }
 ul.nav {
   list-style-type: none;
@@ -42,9 +44,10 @@ ul.nav li.active a {
   padding: 14px 16px;
   text-decoration: none;
 }
-ul.nav li:hover a {
-  font-weight: bold;
+ul.nav li:hover {
+  background-color: var(--sel-topbar-color);
 }
+
 ul.nav li {
   transition: padding 1s;
 }
