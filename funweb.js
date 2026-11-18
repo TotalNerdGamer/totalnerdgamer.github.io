@@ -46,7 +46,8 @@ function genhuntlist() {
         "archie": "<li><p>The page discussing the development of <a href='archie.html'>my indie game \"Archie: Of Mice and Men.\"</a></p></li>",
         "frost": "<li><p><a href=\"https://www.poetryfoundation.org/poems/43816/to-a-mouse-56d222ab36e33\" target=\"_blank_\">Robert Frost's poem \"To a Mouse.\"</a> I'll admit I have a hard time understanding it(it is EXTREMELY Scottish) but as far as I can tell it's pretty good.<p></li>",
         "404": "<li><p>This website's custom 404 page.</p></li>",
-        "beans": "<li><p>The repo for a silly meme platformer I'm working on, <a href='https://github.com/TotalNerdGamer/kirby-beans' target='_blank_'>Kirby Consumes Baked Beans in the Theater Despite Meta Knight's Spanish Fury.</a> That's not the full title, but the full one is way too long. <br>PS: Please don't sue me, Nintendo.<br>PPS: This is a rare kind of hunt link because it's not hidden.</p></li>"
+        "beans": "<li><p>The repo for a silly meme platformer I'm working on, <a href='https://github.com/TotalNerdGamer/kirby-beans' target='_blank_'>Kirby Consumes Baked Beans in the Theater Despite Meta Knight's Spanish Fury.</a> That's not the full title, but the full one is way too long. <br>PS: Please don't sue me, Nintendo.<br>PPS: This is a rare kind of hunt link because it's not hidden.</p></li>",
+        "email": "<li><p>A mailto link leading to one of my iCloud aliases, <a href='mailto:celestegamer2012@icloud.com' target='_blank_'>celestegamer2012@icloud.com</a>.</p></li>"
     }
     if (localStorage.vishid) {
         const vislist = JSON.parse(localStorage.vishid);
